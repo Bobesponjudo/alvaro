@@ -149,10 +149,150 @@ strong{
     margin-left: 15px;
     transition: 0.3s;
 }
-
 .social-icons a:hover {
     opacity: 0.7;
 }
 .border-top {
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.content-side {
+    flex: 1;
+}
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.benefits-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.benefits-list li {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.check {
+    margin-right: 8px;
+    font-weight: bold;
+}
+.conclusion {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 30px;
+}
+.btn-buy {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1.5px solid #2d7a7a; 
+    color: #2d7a7a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-buy:hover {
+    background-color: #2d7a7a;
+    color: white;
+}
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.image-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; 
+}
+@media (max-width: 900px) {
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .benefits-list li {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}
+.categorias-wrapper {
+    gap: 10px;
+    height: 480px;
+}
+
+.categorias-item {
+    flex: 1;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+}
+
+.categorias-item:hover {
+    flex: 2.5;
+}
+
+.categorias-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categorias-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categorias-label span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.categoria-btn {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 6px 18px;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categoria-btn:hover {
+    background-color: #fff;}
